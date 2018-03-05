@@ -36,7 +36,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
             <ul class="navbar-nav mx-auto">
-                <?=bc_links($nav1)?>
+                <?=bc_links($config->nav1)?>
             <!--     
             <li class="nav-item active px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="index.php">Home
@@ -71,8 +71,6 @@
 function to create navigation from 
 as associative array
 
-
-
 */
 function bc_links($nav1){
     
@@ -95,7 +93,6 @@ function bc_links($nav1){
             </li>
             '; 
         }
-  
     }
     
     return $myReturn;

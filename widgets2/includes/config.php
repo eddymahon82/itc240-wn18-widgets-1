@@ -26,11 +26,12 @@ date_default_timezone_set('America/Los_Angeles');
 //create config object
 $config = new stdClass;
 
-$nav1['index.php'] = "HOME";
-$nav1['customers.php'] = "CUSTOMERS";
-$nav1['olySummerSports_list.php'] = "OLYMPIC SUMMER SPORTS";
-$nav1['email2.php'] = "CONTACT";
-$nav1['daily.php'] = "DAILY";
+//these are the navigation links
+$config->nav1['index.php'] = "HOME";
+$config->nav1['customers.php'] = "CUSTOMERS";
+$config->nav1['olySummerSports_list.php'] = "OLYMPIC SUMMER SPORTS";
+$config->nav1['email2.php'] = "CONTACT";
+$config->nav1['daily.php'] = "DAILY";
 
 //create default page identifier
 define('THIS_PAGE',basename($_SERVER['PHP_SELF']));
@@ -51,8 +52,8 @@ if (SECURE && $_SERVER['SERVER_PORT'] != 443) {#force HTTPS
 }
 $config->virtual_path = $protocol . $_SERVER["HTTP_HOST"] . '/' . $sub_folder;
 
-define('ADMIN_PATH', $config->virtual_path . '/admin/'); # Could change to sub folder
-define('INCLUDE_PATH', $config->physical_path . '/includes/');
+define('ADMIN_PATH', $config->virtual_path . 'admin/'); # Could change to sub folder
+define('INCLUDE_PATH', $config->physical_path . 'includes/');
 
 //END NEW THEME STUFF
 

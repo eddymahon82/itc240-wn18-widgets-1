@@ -1,5 +1,5 @@
 <?php include 'includes/config.php';?>
-<?php include 'includes/header.php';?>
+<?php get_header()?>
 <h2> Customers </h2>
 <?php
 
@@ -25,4 +25,4 @@ if (mysqli_num_rows($result) > 0)//at least one record!
 @mysqli_close($iConn); #close connection to database
 
 ?>
-<?php include 'includes/footer.php';?>
+<?php get_footer()?>

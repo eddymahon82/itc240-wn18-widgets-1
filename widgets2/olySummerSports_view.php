@@ -41,7 +41,7 @@ if(mysqli_num_rows($result) > 0)
 }
 
 ?>
-<?php include 'includes/header.php';?>
+<?php get_header()?>
 <h1><?=$pageID?></h1>
 <?php
     
@@ -50,11 +50,11 @@ if($Feedback == '')
 {//data exists, show it
 
     echo '<p>';
-    echo 'Sport: <b>' . $SportName . '</b> <br />';
-    echo 'Olympic Debut: <b>' . $OlympicDebut . '</b> <br />';
-    echo '# of Variations: <b>' . $NumVariations . '</b> <br />';
-    echo 'Athlete with Most Medals: <b>' . $MostMedals . '</b> <br />';
-    echo 'IOC Description of Sport: <b>' . $Description . '</b> <br />';
+    echo 'Sport:<br /> <b>' . $SportName . '</b> <br /><br />';
+    echo 'Olympic Debut:<br /> <b>' . $OlympicDebut . '</b> <br /><br />';
+    echo '# of Variations:<br /> <b>' . $NumVariations . '</b> <br /><br />';
+    echo 'Athlete with Most Medals:<br /> <b>' . $MostMedals . '</b> <br /><br />';
+    echo 'IOC Description of Sport:<br /> ' . $Description . ' <br /><br />';
     
     echo '<img src="uploads/olysport' . $id . '.png" />';
     
@@ -72,4 +72,4 @@ echo '<p><a href="olySummerSports_list.php">Go Back</a></p>';
 @mysqli_close($iConn);
 
 ?>
-<?php include 'includes/footer.php';?>
+<?php get_footer()?>

@@ -72,7 +72,7 @@ switch($day)
 		}
 </style>
 
-<?php include 'includes/header.php';?>
+<?php get_header()?>
     <h2> Daily Specials </h2>
     
     <img src="<?=$myPic?>" alt="<?=$myAlt?>" id="coffee" />
@@ -87,4 +87,4 @@ switch($day)
     <p><a href="daily.php?day=Saturday">Saturday</a></p>
     <p><a href="daily.php?day=Sunday">Sunday</a></p>
 
-<?php include 'includes/footer.php';?>
+<?php get_footer()?>

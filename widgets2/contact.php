@@ -1,4 +1,4 @@
-<?php include 'header.php'?>   
+<?php get_header()?>  
 
 <?php
 //email2.php
@@ -78,8 +78,7 @@ if(isset($_POST['Submit']))
     ';
 }
 ?>
-
-<?php include 'footer.php';
+<?php get_footer();
 
 function halfcalf_clean_post($key)
 {

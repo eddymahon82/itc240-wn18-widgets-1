@@ -39,7 +39,7 @@ if(mysqli_num_rows($result) > 0)
 }
 
 ?>
-<?php include 'includes/header.php';?>
+<?php get_header()?>
 <h1><?=$pageID?></h1>
 <?php
     
@@ -68,4 +68,4 @@ echo '<p><a href="customer_list.php">Go Back</a></p>';
 @mysqli_close($iConn);
 
 ?>
-<?php include 'includes/footer.php';?>
+<?php get_footer()?>
