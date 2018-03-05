@@ -59,7 +59,8 @@ define('INCLUDE_PATH', $config->physical_path . 'includes/');
 
 //set website defaults
 $config->title = THIS_PAGE;
-$config->banner = 'Widgets';
+$config->banner = 'WORLD OF WIDGETS';
+$config->address = '3481 Melrose Place | Beverly Hills, CA 90210 | 123.456.7890';
 $config->loadhead = '';//place items in <head> element
 
 switch(THIS_PAGE){
