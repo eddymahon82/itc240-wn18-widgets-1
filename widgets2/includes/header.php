@@ -38,7 +38,7 @@
         </button>
         <div class="collapse navbar-collapse" id="navbarResponsive">
           <ul class="navbar-nav mx-auto">
-           <?=coffee_links($nav1)?>
+           <?=coffee_links($config->$nav1)?>
               <!--
               <li class="nav-item active px-lg-4">
               <a class="nav-link text-uppercase text-expanded" href="template.php">Home

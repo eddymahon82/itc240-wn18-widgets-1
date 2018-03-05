@@ -1,8 +1,14 @@
-<?php include 'includes/config.php';?>
-<?php include 'includes/header.php';?>
-  <h2> Our Template </h2>
-  <p>Clever...Clever...Clever</p>
-  <p>Clever...Clever...Clever</p>
-  <p>Clever...Clever...Clever</p>
-  <p>Clever...Clever...Clever</p>
-<?php include 'includes/footer.php';?>
+<?php include 'includes/config.php'?>
+<?php get_header()?>
+<h3>Name of page</h3>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<p>Clever content goes here</p>
+<?php get_footer()?>
