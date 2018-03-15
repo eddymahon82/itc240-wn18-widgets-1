@@ -28,7 +28,7 @@ $config = new stdClass;
 
 //these are the navigation links
 $config->nav1['index.php'] = "HOME";
-$config->nav1['customers.php'] = "CUSTOMERS";
+$config->nav1['customer_list.php'] = "CUSTOMERS";
 $config->nav1['olySummerSports_list.php'] = "OLYMPIC SUMMER SPORTS";
 $config->nav1['email2.php'] = "CONTACT";
 $config->nav1['daily.php'] = "DAILY";
